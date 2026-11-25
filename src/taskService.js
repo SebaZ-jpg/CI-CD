@@ -25,3 +25,4 @@ function createService(repository) {
   };
 }
 module.exports = { validateTitle, createService };
+console.log(variableQueNoExiste);
