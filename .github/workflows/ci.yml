@@ -27,7 +27,7 @@ jobs:
       # TODO: tres steps distintos: lint, format:check y test:unit
       - name: Lint
         run: npm run lint
-      - name: Format check
+      - name: Format:check
         run: npm run format:check
-      - name: Testunit
+      - name: Test:unit
         run: npm run test:unit
