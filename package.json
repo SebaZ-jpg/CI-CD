@@ -15,7 +15,7 @@
     "coverage": "c8 --check-coverage --lines 75 --branches 65 npm test",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format:check": "prettier --check --write .",
     "openapi:lint": "redocly lint openapi.yaml",
     "docs:build": "mkdirp dist/docs && redocly build-docs openapi.yaml -o dist/docs/index.html",
     "audit:ci": "npm audit --audit-level=high --omit=dev",
