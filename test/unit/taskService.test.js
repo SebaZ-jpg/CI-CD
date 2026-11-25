@@ -15,3 +15,8 @@ test('completa tarea y da 404 para la inexistente', async () => {
   assert.equal((await service.complete(created.id)).done, true);
   await assert.rejects(() => service.complete(987), /no encontrada/);
 });
+test('rechaza crear una tarea sin título', async () => {
+  const service = createService(memoryRepository());
+
+  await assert.rejects(() => service.create({ title: '' }), /no vacío/);
+});
